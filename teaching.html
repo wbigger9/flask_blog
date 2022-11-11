@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .grid {
+  display: grid;
+  grid-template-columns: 150px auto 150px;
+  grid-gap: none; 
+  
+}
+
+header, footer {
+  grid-column: 1 / 4;
+  
+}
+
+@media all and (max-width: 700px) {
+  aside,
+  article {
+    grid-column: 1 / 4;
+  }
+}
+
+/* Demo Specific Styles */
+body {
+  margin: 0 auto;
+  max-width: 56em;
+  padding: 1em 0;
+  background-image: url("/Applications/Misc/my_website/my-app/3d-sunset-beach-retro-palms-vector-sci-fi-background-digital-landscape-cyber-surface-80s-party-background_518816-233.webp");
+  background-size: auto;
+}
+.sidebar-left {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:x-large;
+    font-weight: bold;
+    background-image: url("/Users/williambigger/Desktop/my_website/mosaic-200864_1920.jpg");
+    background-size: contain;
+    color: darkred;
+  
+}
+.sidebar-right {
+  float: right;
+
+}
+header,
+aside,
+article,
+footer {
+  background: #eaeaea;
+  background-image: url("gradient-summer-background-videocalls_52683-61337.jpeg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+  background-size: cover;
+}
+header,
+footer {
+  height: 20vh
+}
+
+@keyframes example {
+  from {background-image: url();}
+  to {background-color: yellow;}
+}
+
+/* The element to apply the animation to */
+aside {
+  
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+
+
+.navigation {
+  background-color: aqua;
+  background-image: url("gradient-summer-background-videocalls_52683-61337.jpeg");
+  display: flexbox;
+  justify-content: flex-start;
+  position: relative;
+  width: 80vw;
+  margin: 30px 5px 30px 30px;
+  width: 700px;
+}
+ul.nav {
+  padding-left: 0px;
+  background-color: #3D99CE;
+  text-align: center;
+  margin-top: 5%;
+  margin-left: 10%;
+}
+ul.nav > li {
+  display: inline-block;
+  padding: 10px 20px;
+}
+ul.nav > li:hover {
+  background-color: #2779BF;
+}
+ul.nav > li > a {
+  color: white;
+  text-decoration: none;
+}
+header {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: x-large;
+  font-size: 4em;
+}
+article {
+  background-image: url("/Applications/Misc/my_website/my-app/retro-wave-background80s-future-retro-synth-illustration-beach-poster-futuristic-background_518816-129.jpeg");
+  background-size: cover;
+}
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
+<div>
+
+  <div class="navigation">
+    <ul class="nav">
+      <li><a href="/home">Home</a></li>
+      <li><a href="/home">About</a></li>
+      <li><a href="/blog">Blog</a></li>
+    </ul>
+  </aside>
+</div>
+
+</div>
+<div class="grid">
+    <header>
+      Header
+    </header>
+  
+    <aside class="sidebar-left">
+      My Github Profile
+    </aside>
+  
+    <article>
+      Article
+    </article>
+  
+    <aside class="sidebar-right">
+      <a target = "blank" href="https://youtu.be/TlhIk7iPU9o">Song I'm currently listening to</a>
+    </aside>
+    
+    <footer>
+      Footer
+    </footer>
+  </div>
